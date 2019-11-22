@@ -524,12 +524,14 @@
 							</g>
 							<path d="M283.5 17.1 C 355.4 21.5, 353.4 -42.9, 424.9 -51.6" />
 						</a>
-						<a xlink:href="https://en.wikipedia.org/wiki/Clustering_illusion" style="display: none">
-							<g transform="rotate(-5.2) translate(428.0)">
+						<a xlink:href="https://en.wikipedia.org/wiki/Clustering_illusion">
+							<!-- <g transform="rotate(-5.2) translate(428.0)"> -->
+							<g transform="rotate(3.5) translate(428.0)">
 								<circle cx="3" r="3.0" />
-								<text x="12" y="4" class="Clustering illusion">Clustering illusion</text>
+								<text x="12" y="4" class="Clustering_illusion">Biais des séries</text>
 							</g>
-							<path d="M283.5 17.1 C 355.4 21.5, 354.5 -32.2, 426.2 -38.7" />
+							<!-- <path d="M283.5 17.1 C 355.4 21.5, 354.5 -32.2, 426.2 -38.7" /> -->
+							<path d="M283.5 17.1 C 355.4 21.5, 355.4 21.5, 427.2 25.8" />
 						</a>
 						<a xlink:href="https://en.wikipedia.org/wiki/Insensitivity_to_sample_size" style="display: none">
 							<g transform="rotate(-3.5) translate(428.0)">
@@ -1844,153 +1846,184 @@
 			</g>
 
 			<g transform="translate(950,780)" class="content" id="Availability_heuristic" style="text-anchor:middle; fill:#098">
-				<text class="top" dy="-120" style="font-size:32.0px; font-weight:bold;">Biais de disponibilité</text>
-				<text class="middle" dy="-80" style="font-size:16.0px; font-weight:bold;">
+				<text class="top" dy="-125" style="font-size:32.0px; font-weight:bold;">Biais de disponibilité</text>
+				<text class="middle" dy="-85" style="font-size:16.0px; font-weight:bold;">
 					Tendance à baser notre raisonnement sûr ce que nous avons à l'esprit actuellement
 				</text>
-				<text class="middle" dy="-60" style="font-size:16.0px; font-weight:bold;">
+				<text class="middle" dy="-65" style="font-size:16.0px; font-weight:bold;">
 					sans chercher à acquérir de nouvelles informations concernant la situation.
 				</text>
-				<text class="middle" dy="-40" style="font-size:16.0px;">
+				<text class="middle" dy="-35" style="font-size:16.0px;">
 					Il est assimilé en psychologie à l'heuristique de disponibilité qui désigne justement
 				</text>
-				<text class="middle" dy="-20" style="font-size:16.0px;">
+				<text class="middle" dy="-15" style="font-size:16.0px;">
 					un mode de raisonnement qui se base uniquement ou principalement sur les informations
 				</text>
-				<text class="middle" dy="0" style="font-size:16.0px;">
+				<text class="middle" dy="5" style="font-size:16.0px;">
 					immédiatement disponibles en mémoire, en particulier lorsqu'elles sont stéréotypées.
 				</text>
-				<text class="middle" dy="30" style="font-size:14.0px; font-style:italic;">
+				<text class="middle" dy="35" style="font-size:14.0px; font-style:italic;">
 					Par exemple, en situation de stress intense, la panique peut faire prendre des risques
 				</text>
-				<text class="middle" dy="50" style="font-size:14.0px; font-style:italic;">
+				<text class="middle" dy="55" style="font-size:14.0px; font-style:italic;">
 					inconsidérés sur la base d'une heuristique de disponibilité : une personne dans un immeuble
 				</text>
-				<text class="middle" dy="70" style="font-size:14.0px; font-style:italic;">
+				<text class="middle" dy="75" style="font-size:14.0px; font-style:italic;">
 					en feu cherchera à descendre un escalier enfumé au lieu de se protéger et d'attendre
 				</text>
-				<text class="middle" dy="90" style="font-size:14.0px; font-style:italic;">
+				<text class="middle" dy="95" style="font-size:14.0px; font-style:italic;">
 					les secours dans un appartement calfeutré.
 				</text>
-				<text class="bottom" dy="120" style="font-size: 12.0px;">Source : <a xlink:href="https://en.wikipedia.org/wiki/Availability_heuristic">https://en.wikipedia.org/wiki/Availability_heuristic</a> (en) / <a xlink:href="http://www.toupie.org/Biais/Biais_disponibilite.htm">Plus de détails</a></text>
+				<text class="bottom" dy="125" style="font-size: 12.0px;">Source : <a xlink:href="https://en.wikipedia.org/wiki/Availability_heuristic">https://en.wikipedia.org/wiki/Availability_heuristic</a> (en) / <a xlink:href="http://www.toupie.org/Biais/Biais_disponibilite.htm">Plus de détails</a></text>
 			</g>
 			<g transform="translate(950,780)" class="content" id="Von_Restorff_effect" style="text-anchor:middle; fill:#098">
-				<text class="top" dy="-110" style="font-size:32.0px; font-weight:bold;">Biais d'isolation</text>
-				<text class="middle" dy="-70" style="font-size:16.0px; font-weight:bold;">
+				<text class="top" dy="-115" style="font-size:32.0px; font-weight:bold;">Biais d'isolation</text>
+				<text class="middle" dy="-75" style="font-size:16.0px; font-weight:bold;">
 					Tendance à mieux retenir un élément qui se détachent
 				</text>
-				<text class="middle" dy="-50" style="font-size:16.0px; font-weight:bold;">
+				<text class="middle" dy="-55" style="font-size:16.0px; font-weight:bold;">
 					d'autres éléments homogènes entre eux.
 				</text>
-				<text class="middle" dy="-30" style="font-size:16.0px;">
+				<text class="middle" dy="-25" style="font-size:16.0px;">
 					Il est assimilé en psychologie à l'effet d'isolation ou effet Von Restorff qui
 				</text>
-				<text class="middle" dy="-10" style="font-size:16.0px;">
+				<text class="middle" dy="-5" style="font-size:16.0px;">
 					prévoit qu'un objet qui se détache d'autres est plus susceptible d'être retenu.
 				</text>
-				<text class="middle" dy="20" style="font-size:14.0px; font-style:italic;">
+				<text class="middle" dy="25" style="font-size:14.0px; font-style:italic;">
 					Par exemple, si une personne examine une liste de courses avec un article surligné en vert vif,
 				</text>
-				<text class="middle" dy="40" style="font-size:14.0px; font-style:italic;">
+				<text class="middle" dy="45" style="font-size:14.0px; font-style:italic;">
 					elle sera plus susceptible de se souvenir de l'élément surligné que des autres éléments. 
 				</text>
-				<text class="middle" dy="60" style="font-size:14.0px; font-style:italic;">
+				<text class="middle" dy="65" style="font-size:14.0px; font-style:italic;">
 					Par exemple, dans la liste de mots suivant —bureau, chaise, lit, table, giraffe, commode, canapé—,
 				</text>
-				<text class="middle" dy="80" style="font-size:14.0px; font-style:italic;">
+				<text class="middle" dy="85" style="font-size:14.0px; font-style:italic;">
 					la giraffe sera plus suceptible d'être retenue car elle n'est pas un meuble.
 				</text>
-				<text class="bottom" dy="110" style="font-size: 12.0px;">Source : <a xlink:href="https://en.wikipedia.org/wiki/Von_Restorff_effect">https://en.wikipedia.org/wiki/Von_Restorff_effect</a> (en) / <a xlink:href="https://fr.wikipedia.org/wiki/Effet_von_Restorff">Plus de détails</a></text>
+				<text class="bottom" dy="115" style="font-size: 12.0px;">Source : <a xlink:href="https://en.wikipedia.org/wiki/Von_Restorff_effect">https://en.wikipedia.org/wiki/Von_Restorff_effect</a> (en) / <a xlink:href="https://fr.wikipedia.org/wiki/Effet_von_Restorff">Plus de détails</a></text>
 			</g>
 			<g transform="translate(950,780)" class="content" id="Anchoring" style="text-anchor:middle; fill:#098">
-				<text class="top" dy="-120" style="font-size:32.0px; font-weight:bold;">Biais d'ancrage</text>
-				<text class="middle" dy="-80" style="font-size:16.0px; font-weight:bold;">
+				<text class="top" dy="-125" style="font-size:32.0px; font-weight:bold;">Biais d'ancrage</text>
+				<text class="middle" dy="-85" style="font-size:16.0px; font-weight:bold;">
 					Tendance à avoir des difficultés à nous départir de notre première impression,
 				</text>
-				<text class="middle" dy="-60" style="font-size:16.0px; font-weight:bold;">
+				<text class="middle" dy="-65" style="font-size:16.0px; font-weight:bold;">
 					l'esprit n'arrivant plus à apprécier et prendre en considération
 				</text>
-				<text class="middle" dy="-40" style="font-size:16.0px; font-weight:bold;">
+				<text class="middle" dy="-45" style="font-size:16.0px; font-weight:bold;">
 					les nouvelles valeurs ou à envisager d'autres choix.
 				</text>
-				<text class="middle" dy="-20" style="font-size:16.0px;">
+				<text class="middle" dy="-15" style="font-size:16.0px;">
 					On le nomme parfois biais de point de départ. Il est assimilé en psychologie
 				</text>
-				<text class="middle" dy="0" style="font-size:16.0px;">
+				<text class="middle" dy="5" style="font-size:16.0px;">
 					à l'ancrage qui désigne le fait de se focaliser sur une première information,
 				</text>
-				<text class="middle" dy="20" style="font-size:16.0px;">
+				<text class="middle" dy="25" style="font-size:16.0px;">
 					une première valeur ou un premier élément.
 				</text>
-				<text class="middle" dy="50" style="font-size:14.0px; font-style:italic;">
+				<text class="middle" dy="55" style="font-size:14.0px; font-style:italic;">
 					Par exemple, l'élève qui arrive en retard le jour de la rentrée des classes 
 				</text>
-				<text class="middle" dy="70" style="font-size:14.0px; font-style:italic;">
+				<text class="middle" dy="75" style="font-size:14.0px; font-style:italic;">
 					a toutes les chances d'être catalogué comme « jamais ponctuel » par le professeur.
 				</text>
-				<text class="middle" dy="90" style="font-size:14.0px; font-style:italic;">
+				<text class="middle" dy="95" style="font-size:14.0px; font-style:italic;">
 					Une telle étiquette sera très difficile à retirer.
 				</text>
-				<text class="bottom" dy="120" style="font-size: 12.0px;">Source : <a xlink:href="https://en.wikipedia.org/wiki/Anchoring">https://en.wikipedia.org/wiki/Anchoring</a> (en) / <a xlink:href="http://www.toupie.org/Biais/Biais_ancrage.htm">Plus de détails</a></text>
+				<text class="bottom" dy="125" style="font-size: 12.0px;">Source : <a xlink:href="https://en.wikipedia.org/wiki/Anchoring">https://en.wikipedia.org/wiki/Anchoring</a> (en) / <a xlink:href="http://www.toupie.org/Biais/Biais_ancrage.htm">Plus de détails</a></text>
 			</g>
 			<g transform="translate(950,780)" class="content" id="Confirmation_bias" style="text-anchor:middle; fill:#098">
-				<text class="top" dy="-120" style="font-size:32.0px; font-weight:bold;">Biais de confirmation</text>
-				<text class="middle" dy="-80" style="font-size:16.0px; font-weight:bold;">
+				<text class="top" dy="-125" style="font-size:32.0px; font-weight:bold;">Biais de confirmation</text>
+				<text class="middle" dy="-85" style="font-size:16.0px; font-weight:bold;">
 					Tendance à privilégier les informations confirmant nos idées préconçues
 				</text>
-				<text class="middle" dy="-60" style="font-size:16.0px; font-weight:bold;">
+				<text class="middle" dy="-65" style="font-size:16.0px; font-weight:bold;">
 					notamment celle de nature affective ou concernant nos opinions ou croyances
 				</text>
-				<text class="middle" dy="-40" style="font-size:16.0px; font-weight:bold;">
+				<text class="middle" dy="-45" style="font-size:16.0px; font-weight:bold;">
 					et à ignorer les informations jouant en défaveur de nos conceptions.
 				</text>
-				<text class="middle" dy="-20" style="font-size:16.0px;">
+				<text class="middle" dy="-15" style="font-size:16.0px;">
 					On le nomme également biais de confirmation d'hypothèse du fait
 				</text>
-				<text class="middle" dy="0" style="font-size:16.0px;">
+				<text class="middle" dy="5" style="font-size:16.0px;">
 					qu'il nous convainc d'accorder énormément de crédit à nos
 				</text>
-				<text class="middle" dy="20" style="font-size:16.0px;">
+				<text class="middle" dy="25" style="font-size:16.0px;">
 					hypothèses préférés et moins de poids aux autres hypothèses.
 				</text>
-				<text class="middle" dy="50" style="font-size:14.0px; font-style:italic;">
+				<text class="middle" dy="55" style="font-size:14.0px; font-style:italic;">
 					Par exemple, si quelqu'un à la croyance pré-établie qu'une maison
 				</text>
-				<text class="middle" dy="70" style="font-size:14.0px; font-style:italic;">
+				<text class="middle" dy="75" style="font-size:14.0px; font-style:italic;">
 					est hanté, alors le moindre bruit douteux dans cette maision lui confirmera
 				</text>
-				<text class="middle" dy="90" style="font-size:14.0px; font-style:italic;">
+				<text class="middle" dy="95" style="font-size:14.0px; font-style:italic;">
 					que c'est le cas, le rendant aveugle à toutes autres explications.
 				</text>
-				<text class="bottom" dy="120" style="font-size: 12.0px;">Source : <a xlink:href="https://en.wikipedia.org/wiki/Confirmation_bias">https://en.wikipedia.org/wiki/Confirmation_bias</a> (en) / <a xlink:href="https://fr.wikipedia.org/wiki/Biais_de_confirmation">Plus de détails</a></text>
+				<text class="bottom" dy="125" style="font-size: 12.0px;">Source : <a xlink:href="https://en.wikipedia.org/wiki/Confirmation_bias">https://en.wikipedia.org/wiki/Confirmation_bias</a> (en) / <a xlink:href="https://fr.wikipedia.org/wiki/Biais_de_confirmation">Plus de détails</a></text>
 			</g>
 			<g transform="translate(950,780)" class="content" id="Bias_blind_spot" style="text-anchor:middle; fill:#098">
-				<text class="top" dy="-110" style="font-size:32.0px; font-weight:bold;">Biais de la tâche aveugle</text>
-				<text class="middle" dy="-70" style="font-size:16.0px; font-weight:bold;">
+				<text class="top" dy="-115" style="font-size:32.0px; font-weight:bold;">Biais de la tâche aveugle</text>
+				<text class="middle" dy="-75" style="font-size:16.0px; font-weight:bold;">
 					Tendance à distinguer les biais cognitifs et le biais de motivation
 				</text>
-				<text class="middle" dy="-50" style="font-size:16.0px; font-weight:bold;">
+				<text class="middle" dy="-55" style="font-size:16.0px; font-weight:bold;">
 					davantage chez les autres que chez nous-même.
 				</text>
-				<text class="middle" dy="-30" style="font-size:16.0px;">
+				<text class="middle" dy="-25" style="font-size:16.0px;">
 					On le nomme également biais du point aveugle.
 				</text>
-				<text class="middle" dy="-10" style="font-size:16.0px;">
+				<text class="middle" dy="-5" style="font-size:16.0px;">
 					C'est un métabiais puisqu'il se rapporte à un mode de raisonnement
 				</text>
-				<text class="middle" dy="10" style="font-size:16.0px;">
+				<text class="middle" dy="15" style="font-size:16.0px;">
 					erroné dans l'examen des biais cognitifs eux-même.
 				</text>
-				<text class="middle" dy="40" style="font-size:14.0px; font-style:italic;">
+				<text class="middle" dy="45" style="font-size:14.0px; font-style:italic;">
 					Par exemple, quelqu'un pourra demander un complément d'information sur
 				</text>
-				<text class="middle" dy="60" style="font-size:14.0px; font-style:italic;">
+				<text class="middle" dy="65" style="font-size:14.0px; font-style:italic;">
 					une idée en affirmant qu'elle n'est pas claire sans s'apercevoir qu'il
 				</text>
-				<text class="middle" dy="80" style="font-size:14.0px; font-style:italic;">
+				<text class="middle" dy="85" style="font-size:14.0px; font-style:italic;">
 					n'a pas apporter une telle information de son côté pour son idée inverse.
 				</text>
-				<text class="bottom" dy="110" style="font-size: 12.0px;">Source : <a xlink:href="https://en.wikipedia.org/wiki/Bias_blind_spot">https://en.wikipedia.org/wiki/Bias_blind_spot</a> (en) / <a xlink:href="https://www.sceptiques.qc.ca/dictionnaire/biasblindspot.html">Plus de détails</a></text>
+				<text class="bottom" dy="115" style="font-size: 12.0px;">Source : <a xlink:href="https://en.wikipedia.org/wiki/Bias_blind_spot">https://en.wikipedia.org/wiki/Bias_blind_spot</a> (en) / <a xlink:href="https://www.sceptiques.qc.ca/dictionnaire/biasblindspot.html">Plus de détails</a></text>
+			</g>
+			<g transform="translate(950,780)" class="content" id="Clustering_illusion" style="text-anchor:middle; fill:#07A">
+				<text class="top" dy="-125" style="font-size:32.0px; font-weight:bold;">Biais des séries</text>
+				<text class="middle" dy="-85" style="font-size:16.0px; font-weight:bold;">
+					Tendance à percevoir à tort des signes du destin ou des
+				</text>
+				<text class="middle" dy="-65" style="font-size:16.0px; font-weight:bold;">
+					coïncidences dans des données tirées au hasard.
+				</text>
+				<text class="middle" dy="-35" style="font-size:16.0px;">
+					Aussi appelée illusion des séries, il est fréquent car
+				</text>
+				<text class="middle" dy="-15" style="font-size:16.0px;">
+					l'esprit humain a tendance à sous-estimer la variabilité 
+				</text>
+				<text class="middle" dy="5" style="font-size:16.0px;">
+					des évènements dans une série aléatoire.
+				</text>
+				<text class="middle" dy="35" style="font-size:14.0px; font-style:italic;">
+					Par exemple, dans une série de tirage à pile ou face avec une
+				</text>
+				<text class="middle" dy="55" style="font-size:14.0px; font-style:italic;">
+					pièce de monnaie, beaucoup de personnes ont tendance à considérer
+				</text>
+				<text class="middle" dy="75" style="font-size:14.0px; font-style:italic;">
+					qu'après une série de cinq coups « pile », la probabilité d'avoir
+				</text>
+				<text class="middle" dy="95" style="font-size:14.0px; font-style:italic;">
+					« face » au coup suivant est supérieure à celle d'avoir pile.
+				</text>
+				<text class="bottom" dy="125" style="font-size: 12.0px;">Source : <a xlink:href="https://en.wikipedia.org/wiki/Clustering_illusion">https://en.wikipedia.org/wiki/Clustering_illusion</a> (en) / <a xlink:href="http://www.toupie.org/Biais/Illusion_series.htm">Plus de détails</a></text>
 			</g>
 		</g>
 
