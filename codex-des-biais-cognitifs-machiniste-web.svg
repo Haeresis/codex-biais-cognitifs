@@ -59,7 +59,7 @@
 			}
 
 			.content {
-				text-shadow: 6px 6px 8px #fff, -6px 6px 8px #fff, 6px -6px 8px #fff, -6px -6px 8px #fff, 6px 6px 8px #fff, -6px 6px 8px #fff, 6px -6px 8px #fff, -6px -6px 8px #fff;
+				text-shadow: 6px 6px 8px #fff, -6px 6px 8px #fff, 6px -6px 8px #fff, -6px -6px 8px #fff;
 				opacity: 0;
 				 webkit-transition: opacity 1s ease;
 				   -moz-transition: opacity 1s ease;
@@ -114,6 +114,21 @@
 			.js path.is-half-hidden {
 				opacity: 0.1;
 			}
+
+			.full,
+			.normal {
+				display: none;
+				cursor: pointer;
+			}
+
+			.js .full.is-visible,
+			.js .normal.is-visible {
+				display: block;
+			}
+
+			.svg-fit {
+				width: 100%;
+			}
 		</style>
 
 		<rect id="background" width="100%" height="100%" fill="#fff" />
@@ -124,6 +139,8 @@
 				<a xlink:href="">
 					<text class="Biases_Codex" style="font-size:32.0px; font-weight:bold; text-anchor:middle;" y="-720.0">C O D E X D E S B I A I S C O G N I T I F S</text>
 				</a>
+				<text class="full is-visible" style="font-size:32.0px; font-weight:bold; text-anchor:middle;" x="400" y="-720.0">↹</text>
+				<text class="normal" style="font-size:32.0px; font-weight:bold; text-anchor:middle;" x="400" y="-720.0">⇆</text>
 			</g>
 			<g class="parts" style="font-size:32.0px;">
 				<a xlink:href="">
@@ -1980,6 +1997,9 @@
 		<script type="text/javascript"><![CDATA[
 			var all = [],
 				svg = document.getElementsByTagName('svg')[0],
+				background = document.getElementById('background'),
+				full = document.getElementsByClassName('full')[0],
+				normal = document.getElementsByClassName('normal')[0],
 				parts = document.getElementsByClassName('parts'),
 				groups = document.getElementsByClassName('groups'),
 			    tooMuch = document.getElementsByClassName('Too_Much')[0],
@@ -1990,7 +2010,8 @@
 			    brain = document.getElementsByClassName('brain')[0],
 			    circle = document.getElementsByClassName('circle')[0],
 			    analysis = document.getElementById('analysis'),
-			    bias = getParameterByName('bias');
+			    bias = getParameterByName('bias'),
+			    screen = getParameterByName('screen');
 
 			function getParameterByName(name, url) {
 				if (!url) url = window.location.href;
@@ -2043,6 +2064,20 @@
 				}, 2000);
 			}
 
+			function fullPage() {
+				svg.style.height = Math.round((window.innerWidth * 1500) / 1900) + 'px';
+				svg.classList.add('svg-fit');
+				normal.classList.add('is-visible');
+				full.classList.remove('is-visible');
+			}
+
+			function normalPage() {
+				svg.style.height = '';
+				svg.classList.remove('svg-fit');
+				normal.classList.remove('is-visible');
+				full.classList.add('is-visible');
+			}
+
 			// Hide all content
 			[].forEach.call(analysis.getElementsByClassName('content'), function (content) {
 				content.classList.add('is-hidden');
@@ -2053,13 +2088,34 @@
 				displayContent(bias);
 			}
 
+			// Set in plain page
+			if (screen && screen === 'full') {
+				fullPage();
+			}
+
 			// Change content when Hash is updated
-			window.addEventListener("hashchange", function () {
+			window.addEventListener('hashchange', function () {
 				bias = getParameterByName('bias');
+				screen = getParameterByName('screen');
 				if (bias && document.getElementById(bias)) {
 					displayContent(bias);
 				} else {
 					hideContent();
+				}
+				if (screen && screen === 'full') {
+					fullPage();
+				} else {
+					normalPage();
+				}
+			});
+
+			// Fit size when resize
+			window.addEventListener('resize', function () {
+				screen = getParameterByName('screen');
+				if (screen && screen === 'full') {
+					svg.style.height = Math.round((window.innerWidth * 1500) / 1900) + 'px';
+				} else {
+					svg.style.height = '';
 				}
 			});
 
@@ -2076,10 +2132,16 @@
 					var id = aEl.getElementsByTagName('text')[0].getAttribute('class');
 					aEl.setAttribute('target', '_blank');
 					aEl.addEventListener('click', function (e) {
+						var screen, allFragment = '';
+
 						e.preventDefault();
 						e.stopPropagation();
 
-						window.location.hash = 'bias=' + id;
+						screen = getParameterByName('screen');
+						allFragment += 'bias=' + id;
+						allFragment += (screen) ? '&screen=' + screen : '&screen=normal';
+
+						window.location.hash = allFragment;
 					});
 				});
 			});
@@ -2094,7 +2156,38 @@
 
 			// Action when we click elsewhere
 			svg.addEventListener('click', function (e) {
-				window.location.hash = '';
+				var screen, allFragment = '';
+
+				screen = getParameterByName('screen');
+				allFragment += (screen) ? 'screen=' + screen : '&screen=normal';
+
+				window.location.hash = allFragment;
+			});
+
+			// Full screen
+			full.addEventListener('click', function (e) {
+				var bias, allFragment = '';
+
+				e.stopPropagation();
+
+				bias = getParameterByName('bias'),
+				allFragment += (bias) ? 'bias=' + bias : 'bias=null';
+				allFragment += '&screen=full';
+
+				window.location.hash = allFragment;
+			});
+
+			// Normal screen
+			normal.addEventListener('click', function (e) {
+				var bias, allFragment = '';
+
+				e.stopPropagation();
+
+				bias = getParameterByName('bias'),
+				allFragment += (bias) ? 'bias=' + bias : 'bias=null';
+				allFragment += '&screen=normal';
+
+				window.location.hash = allFragment;
 			});
 
 			// Intro animation
