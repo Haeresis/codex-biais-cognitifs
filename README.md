@@ -23,6 +23,7 @@ Liste non exhaustive de divers biais cognitifs classés et décrits autour d'un 
 ### Biais de jugement
  
 - [Biais d'ancrage](https://cdn.jsdelivr.net/gh/haeresis/codex-biais-cognitifs/codex-des-biais-cognitifs-machiniste-web.svg#bias=Anchoring)
+- [Biais d'autorité](https://cdn.jsdelivr.net/gh/haeresis/codex-biais-cognitifs/codex-des-biais-cognitifs-machiniste-web.svg#bias=Authority_bias)
 - [Biais de confirmation](https://cdn.jsdelivr.net/gh/haeresis/codex-biais-cognitifs/codex-des-biais-cognitifs-machiniste-web.svg#bias=Confirmation_bias)
 - [Biais de la tâche aveugle](https://cdn.jsdelivr.net/gh/haeresis/codex-biais-cognitifs/codex-des-biais-cognitifs-machiniste-web.svg#bias=Bias_blind_spot)
 

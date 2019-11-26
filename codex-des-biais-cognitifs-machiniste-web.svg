@@ -116,13 +116,13 @@
 			}
 
 			.full,
-			.normal {
+			.standard {
 				display: none;
 				cursor: pointer;
 			}
 
 			.js .full.is-visible,
-			.js .normal.is-visible {
+			.js .standard.is-visible {
 				display: block;
 			}
 
@@ -140,7 +140,7 @@
 					<text class="Biases_Codex" style="font-size:32.0px; font-weight:bold; text-anchor:middle;" y="-720.0">C O D E X D E S B I A I S C O G N I T I F S</text>
 				</a>
 				<text class="full is-visible" style="font-size:32.0px; font-weight:bold; text-anchor:middle;" x="400" y="-720.0">↹</text>
-				<text class="normal" style="font-size:32.0px; font-weight:bold; text-anchor:middle;" x="400" y="-720.0">⇆</text>
+				<text class="standard" style="font-size:32.0px; font-weight:bold; text-anchor:middle;" x="400" y="-720.0">⇆</text>
 			</g>
 			<g class="parts" style="font-size:32.0px;">
 				<a xlink:href="">
@@ -675,12 +675,14 @@
 							</g>
 							<path d="M253.4 128.2 C 317.7 160.7, 310.1 174.9, 372.8 210.3" />
 						</a>
-						<a xlink:href="https://en.wikipedia.org/wiki/Authority_bias" style="display: none">
-							<g transform="rotate(31.2) translate(428.0)">
+						<a xlink:href="https://en.wikipedia.org/wiki/Authority_bias">
+							<!--<g transform="rotate(31.2) translate(428.0)">-->
+							<g transform="rotate(26.0) translate(428.0)">
 								<circle cx="3" r="3.0" />
-								<text x="12" y="4" class="Authority bias">Authority bias</text>
+								<text x="12" y="4" class="Authority_bias">Biais d'autorité</text>
 							</g>
-							<path d="M253.4 128.2 C 317.7 160.7, 304.7 184.2, 366.3 221.4" />
+							<!--<path d="M253.4 128.2 C 317.7 160.7, 304.7 184.2, 366.3 221.4" />-->
+							<path d="M253.4 128.2 C 317.7 160.7, 320.1 155.8, 384.8 187.4" />
 						</a>
 						<a xlink:href="https://en.wikipedia.org/wiki/Automation_bias" style="display: none">
 							<g transform="rotate(32.9) translate(428.0)">
@@ -2025,6 +2027,40 @@
 				</text>
 				<text class="bottom" dy="125" style="font-size: 12.0px;">Source : <a xlink:href="https://en.wikipedia.org/wiki/Clustering_illusion">https://en.wikipedia.org/wiki/Clustering_illusion</a> (en) / <a xlink:href="http://www.toupie.org/Biais/Illusion_series.htm">Plus de détails</a></text>
 			</g>
+			<g transform="translate(950,780)" class="content" id="Authority_bias" style="text-anchor:middle; fill:#07A">
+				<text class="top" dy="-135" style="font-size:32.0px; font-weight:bold;">Biais d'autorité</text>
+				<text class="middle" dy="-95" style="font-size:16.0px; font-weight:bold;">
+					Tendance à accorder de la valeur à un propos non pas en fonction de 
+				</text>
+				<text class="middle" dy="-75" style="font-size:16.0px; font-weight:bold;">
+					son contenu mais en fonction de son émetteur, celui-ci faisant
+				</text>
+				<text class="middle" dy="-55" style="font-size:16.0px; font-weight:bold;">
+					autorité dans le domaine ou un domaine sans rapport avec le propos.
+				</text>
+				<text class="middle" dy="-25" style="font-size:16.0px;">
+					On peut aisément prendre avantage de se biais avec des arguments
+				</text>
+				<text class="middle" dy="-5" style="font-size:16.0px;">
+					d'autorité : technique consistant à souligner le fait que notre 
+				</text>
+				<text class="middle" dy="15" style="font-size:16.0px;">
+					argumentation est soutenue par une figure populaire ou respectée.
+				</text>
+				<text class="middle" dy="45" style="font-size:14.0px; font-style:italic;">
+					Par exemple, dans l'affirmation « L'armement nucléaire est une nuisance,
+				</text>
+				<text class="middle" dy="65" style="font-size:14.0px; font-style:italic;">
+					le prix Nobel Georges Charpak l'a affirmé haut et fort » : le prix Nobel
+				</text>
+				<text class="middle" dy="85" style="font-size:14.0px; font-style:italic;">
+					de Georges Charpak confirme son autorité en physique,
+				</text>
+				<text class="middle" dy="105" style="font-size:14.0px; font-style:italic;">
+					mais pas en politique ou en affaires militaires.
+				</text>
+				<text class="bottom" dy="135" style="font-size: 12.0px;">Source : <a xlink:href="https://en.wikipedia.org/wiki/Authority_bias">https://en.wikipedia.org/wiki/Authority_bias</a> (en) / <a xlink:href="https://fr.wikipedia.org/wiki/Argument_d%27autorit%C3%A9">Plus de détails</a></text>
+			</g>
 		</g>
 
 		<script type="text/javascript"><![CDATA[
@@ -2032,7 +2068,7 @@
 				svg = document.getElementsByTagName('svg')[0],
 				background = document.getElementById('background'),
 				full = document.getElementsByClassName('full')[0],
-				normal = document.getElementsByClassName('normal')[0],
+				standard = document.getElementsByClassName('standard')[0],
 				parts = document.getElementsByClassName('parts'),
 				groups = document.getElementsByClassName('groups'),
 			    tooMuch = document.getElementsByClassName('Too_Much')[0],
@@ -2100,14 +2136,14 @@
 			function fullPage() {
 				svg.style.height = Math.round((window.innerWidth * 1500) / 1900) + 'px';
 				svg.classList.add('svg-fit');
-				normal.classList.add('is-visible');
+				standard.classList.add('is-visible');
 				full.classList.remove('is-visible');
 			}
 
-			function normalPage() {
+			function standardPage() {
 				svg.style.height = '';
 				svg.classList.remove('svg-fit');
-				normal.classList.remove('is-visible');
+				standard.classList.remove('is-visible');
 				full.classList.add('is-visible');
 			}
 
@@ -2138,7 +2174,7 @@
 				if (screen && screen === 'full') {
 					fullPage();
 				} else {
-					normalPage();
+					standardPage();
 				}
 			});
 
@@ -2172,7 +2208,7 @@
 
 						screen = getParameterByName('screen');
 						allFragment += 'bias=' + id;
-						allFragment += (screen) ? '&screen=' + screen : '&screen=normal';
+						allFragment += (screen) ? '&screen=' + screen : '&screen=standard';
 
 						window.location.hash = allFragment;
 					});
@@ -2192,7 +2228,7 @@
 				var screen, allFragment = '';
 
 				screen = getParameterByName('screen');
-				allFragment += (screen) ? 'screen=' + screen : '&screen=normal';
+				allFragment += (screen) ? 'screen=' + screen : '&screen=standard';
 
 				window.location.hash = allFragment;
 			});
@@ -2211,14 +2247,14 @@
 			});
 
 			// Normal screen
-			normal.addEventListener('click', function (e) {
+			standard.addEventListener('click', function (e) {
 				var bias, allFragment = '';
 
 				e.stopPropagation();
 
 				bias = getParameterByName('bias'),
 				allFragment += (bias) ? 'bias=' + bias : 'bias=null';
-				allFragment += '&screen=normal';
+				allFragment += '&screen=standard';
 
 				window.location.hash = allFragment;
 			});
