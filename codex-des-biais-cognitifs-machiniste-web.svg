@@ -2,11 +2,11 @@
 	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en-us" width="1900" height="1500" viewBox="0 0 1900 1500">
 		<title>Codex des biais cognitifs</title>
 
-		<script>
+		<script type="text/javascript"><![CDATA[
 			var svg = document.getElementsByTagName('svg')[0];
 
 			svg.classList.add('js');
-		</script>
+		]]></script>
 
 		<style type="text/css">
 			text {
